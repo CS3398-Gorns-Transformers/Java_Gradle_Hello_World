@@ -17,7 +17,7 @@ public class TestGreeter {
 
    {
       assertEquals(g.getName(),"");
-      assertEquals(g.sayHello(),"Snort!");
+      assertEquals(g.sayHello(),"Hello!");
    }
 
 
@@ -30,6 +30,14 @@ public class TestGreeter {
       g.setName("World");
       assertEquals(g.getName(),"World");
       assertEquals(g.sayHello(),"Hello World!");
+   }
+   @Test
+   @DisplayName("Test for Name")
+   public void newTest_NLM_GreeterPass()
+   {
+       g.setName("Nickson");
+       assertEquals(g.getName(), "Nickson");
+       assertEquals(g.sayHello(),"Hello Nickson!");
    }
 
 }
